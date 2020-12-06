@@ -37,8 +37,10 @@ stages {
         }
       
      stage ('Get approval from QA Manager')
-     {
-     input "Please approve for QA deployment?"     
+     { steps
+         {     
+           input "Please approve for QA deployment?"     
+         }
      }
      
      
